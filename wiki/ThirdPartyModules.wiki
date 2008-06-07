@@ -1,0 +1,24 @@
+#summary What packages work with jsonpickle and what packages need work.
+
+= Introduction =
+
+Please help contribute to jsonpickle by identifying other Python modules that you have found are compatible with jsonpickle, and which modules jsonpickle does not work well for.  We will actively try to adapt jsonpickle to get coverage of other Python modules.
+
+To test a module, ensure that you can recreate an object by reading with jsonpickle.loads() the output of jsonpickle.dumps() on that object.
+
+For example:
+{{{
+>>> import feedparser, jsonpickle
+>>> doc = feedparser.parse("http://feedparser.org/docs/examples/atom10.xml")
+>>> pickled = jsonpickle.dumps(doc)
+>>> unpickled = jsonpickle.loads(pickled)
+>>> doc['feed']['title'] == unpickled['feed']['title']
+True
+}}}
+
+== Works with jsonpickle ==
+  * [http://www.feedparser.org/ Universal Feed Parser]
+
+== Somewhat works with jsonpickle ==
+
+== Does not work at all with jsonpickle ==
