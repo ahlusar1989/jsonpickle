@@ -1,6 +1,6 @@
 #summary What packages work with jsonpickle and what packages need work.
 
-= Introduction =
+= Third Party Module Compatibility =
 
 Please help contribute to jsonpickle by identifying other Python modules that you have found are compatible with jsonpickle, and which modules jsonpickle does not work well for.  We will actively try to adapt jsonpickle to get coverage of other Python modules.
 
