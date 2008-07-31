@@ -18,7 +18,10 @@ True
 
 == Works with jsonpickle ==
   * [http://www.feedparser.org/ Universal Feed Parser]
+  * [http://incubator.apache.org/couchdb/ CouchDB] - JSON acceptable to place in CouchDB
 
 == Somewhat works with jsonpickle ==
+Unknown
 
 == Does not work at all with jsonpickle ==
+Unknown
