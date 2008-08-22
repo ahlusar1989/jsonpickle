@@ -1,4 +1,5 @@
 #summary What packages work with jsonpickle and what packages need work.
+#labels Featured
 
 = Third Party Module Compatibility =
 
@@ -10,8 +11,8 @@ For example:
 {{{
 >>> import feedparser, jsonpickle
 >>> doc = feedparser.parse("http://feedparser.org/docs/examples/atom10.xml")
->>> pickled = jsonpickle.dumps(doc)
->>> unpickled = jsonpickle.loads(pickled)
+>>> pickled = jsonpickle.encode(doc)
+>>> unpickled = jsonpickle.decode(pickled)
 >>> doc['feed']['title'] == unpickled['feed']['title']
 True
 }}}
@@ -19,6 +20,7 @@ True
 == Works with jsonpickle ==
   * [http://www.feedparser.org/ Universal Feed Parser]
   * [http://incubator.apache.org/couchdb/ CouchDB] - JSON acceptable to place in CouchDB
+  * [http://code.google.com/p/joose-js/ Joose] - see [http://joose-js.blogspot.com/2008/08/joose-now-supports-jsonpickle.html]
 
 == Somewhat works with jsonpickle ==
 Unknown
