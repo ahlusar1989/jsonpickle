@@ -1,5 +1,5 @@
 #summary Benchmarks of jsonpickle
-#labels Featured
+#labels Deprecated
 
 = Compare jsonpickle using python-cjson and simplejson =
 
