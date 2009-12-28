@@ -1,5 +1,5 @@
 #summary What packages work with jsonpickle and what packages need work.
-#labels Featured
+#labels Deprecated
 
 = Third Party Module Compatibility =
 
